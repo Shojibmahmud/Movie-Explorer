@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%" style="background: #090D16; border-radius: 24px;">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <filter id="glowIcon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Reel Ring -->
+  <circle cx="56" cy="56" r="40" fill="none" stroke="url(#iconGrad)" stroke-width="3.5" opacity="0.35" />
+
+  <!-- Compass Direction Ticks -->
+  <line x1="56" y1="8" x2="56" y2="15" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+  <line x1="56" y1="97" x2="56" y2="104" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+  <line x1="8" y1="56" x2="15" y2="56" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Film Reel Aperture Dots -->
+  <circle cx="56" cy="28" r="3.5" fill="#38BDF8" opacity="0.75" />
+  <circle cx="56" cy="84" r="3.5" fill="#38BDF8" opacity="0.75" />
+  <circle cx="28" cy="56" r="3.5" fill="#38BDF8" opacity="0.75" />
+
+  <!-- Search Lens Center Ring -->
+  <circle cx="56" cy="56" r="26" fill="#0F172A" stroke="url(#iconGrad)" stroke-width="3.5" filter="url(#glowIcon)" />
+
+  <!-- Play Arrow / Discovery Needle -->
+  <path d="M 48 41 L 71 56 L 48 71 Z" fill="url(#iconGrad)" />
+
+  <!-- North Pointer -->
+  <polygon points="56,34 52,43 56,41 60,43" fill="#38BDF8" />
+
+  <!-- Magnifying Glass Handle -->
+  <path d="M 76 76 L 95 95" stroke="url(#iconGrad)" stroke-width="7" stroke-linecap="round" />
+</svg>
